@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source ./utils/utils.sh
+
+LogStarted "=====================================> Destroying deployment via terraform.."
+
+cd tf
+terraform destroy -auto-approve
+cd ..
+LogElapsedDuration
+
+LogCompleted "Done."
+
+# tidy up
+exit 0
