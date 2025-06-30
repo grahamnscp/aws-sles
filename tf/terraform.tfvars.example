@@ -26,15 +26,21 @@ aws_instance_type_sles = "t3.small"
 aws_instance_type_slm = "t3.small"
 
 # AWS EC2 ami
-# Active images: https://pint.suse.com/?resource=images&search=sles-15-sp6&csp=amazon&region=us-east-1&state=active
+# Active images: https://pint.suse.com/?resource=images&search=sles-15-sp7&csp=amazon&region=us-east-1&state=active
 # sles sp6 ami (suse-sles-15-sp6-v20241113-hvm-ssd-x86_64)
-aws_ami_sles = "ami-0d9f9dbae7b9a241d"
-# suse sle micro ami (suse-sle-micro-6-1-byos-v20250210-hvm-ssd-x86_64)
-aws_ami_slm = "ami-0312190f9576d68f7"
+#aws_ami_sles = "ami-0d9f9dbae7b9a241d"
+# sles sp7 ami (suse-sles-15-sp7-v20250619-hvm-ssd-x86_64)
+aws_ami_sles = "ami-06528c11a66cef7a8"
+# suse sle micro byos ami (suse-sle-micro-6-1-byos-v20250210-hvm-ssd-x86_64)
+#aws_ami_slm = "ami-0312190f9576d68f7"
+# suse sle micro byos ami (suse-sle-micro-6-1-byos-v20250522-hvm-ssd-x86_64)
+#aws_ami_slm = "ami-039d7d792f9587f58"
+# suse sle micro ami (suse-sle-micro-6-1-v20250522-hvm-ssd-x86_64-ltd)
+aws_ami_slm = "ami-031612108679b750b"
 
 # Number of instances
 node_count_sles = "1"
-node_count_slm = "0"
+node_count_slm = "1"
 
 # AWS EC2 instance volume sizes (in GB)
 volume_size_root_sles = "50"
